@@ -2,7 +2,7 @@ using System;
 
 namespace DependencyInversionPrinciple
 {
-    public class CustomerRepository
+    public class SQLCustomerRepository : ICustomerRepository
     {
         public void Save(Customer c)
         {

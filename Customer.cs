@@ -4,9 +4,9 @@ namespace DependencyInversionPrinciple
 {
     public class Customer
     {
-        private CustomerRepository repository;
+        private ICustomerRepository repository;
         public String Name { get; set; } 
-        public Customer(String name, CustomerRepository cr)
+        public Customer(String name, ICustomerRepository cr)
         {
             this.repository = cr;
             this.Name = name;
